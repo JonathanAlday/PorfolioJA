@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+/* general */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* header */
 #masthead {
     position: fixed;
     width: 100%;
@@ -6,13 +19,6 @@
     color: rgb(32, 197, 161);
     background: rgb(110, 11, 41);
     border-bottom: 2px solid rgb(26, 24, 24);
-}
-
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
 }
 
 nav {
@@ -34,6 +40,7 @@ nav a: first-child {
     border-left: 0 none;
 }
 
+/* main */
 #main-container {
     padding-top: 130px;
 }
@@ -48,6 +55,45 @@ nav a: first-child {
     border: 1px solid #ddd;
 }
 
+/* portfolio page */
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+}
+
+.work:nth-child(even) {
+    margin-right: 40px;
+}
+
+.work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+}
+
+.work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+}
+
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: red;
+    text-align: center;
+    background: rgb(20, 64, 187);
+    border-bottom: 0;
+}
+
 .auth-image {
     float: left;
     width: 200px;
@@ -56,6 +102,7 @@ nav a: first-child {
     margin-right: 25px;
 }
 
+/* sidebar */
 .sidebar {
     float: right;
     width: 100%;
@@ -81,13 +128,7 @@ h3, .sidebar h2 {
 
 }
 
-.work {
-    position: relative;
-    float: left;
-    width: 274px;
-    margin: 20px 0 25px;
-    overflow: auto;
-}
+/* footer */
 footer {
     padding: 30px 0;
     clear:  both;
